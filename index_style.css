@@ -24,17 +24,22 @@ body {
     font-weight: 700; /* Negrito para destaque */
 }
 
-/* Estilo para a barra lateral */
+/* Estilo para a barra lateral como menu horizontal */
 #side {
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: side;
+    position: fixed; /* Fixa na tela */
+    bottom: 0; /* Alinha ao fundo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 60px; /* Define a altura do menu */
     background-color: #36434A; /* Cor escura */
-    padding: 1rem;
-    color: #E5D4C8; /* Cor do texto na barra lateral */
-    font-weight: 400; /* Regular para texto */
+    padding: 0.5rem;
+    color: #E5D4C8; /* Cor do texto no menu */
+    display: flex;
+    flex-direction: row; /* Organiza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 10px; /* Espaçamento entre os elementos */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra para destaque */
 }
 
 /* Estilo para o conteúdo */
