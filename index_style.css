@@ -1,0 +1,85 @@
+/* Estilo geral para o body */
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Roboto', sans-serif; /* Fontes principais */
+    display: grid;
+    grid-template-areas: 
+        "head"
+        "cont"
+        "side";
+    grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
+    grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo e barra lateral em sequência */
+    height: 100vh; /* Altura total da tela */
+    background-color: #36434A; /* Cor de fundo geral */
+    color: #E5D4C8; /* Cor do texto */
+}
+
+/* Estilo para o cabeçalho */
+#head {
+    grid-area: head;
+    background-color: #FF4777; /* Cor de destaque */
+    padding: 1rem;
+    text-align: center;
+    color: #E5D4C8; /* Cor do texto no cabeçalho */
+    font-weight: 700; /* Negrito para destaque */
+}
+
+/* Estilo para a barra lateral */
+#side {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: side;
+    background-color: #36434A; /* Cor escura */
+    padding: 1rem;
+    color: #E5D4C8; /* Cor do texto na barra lateral */
+    font-weight: 400; /* Regular para texto */
+}
+
+/* Estilo para o conteúdo */
+#cont {
+    grid-area: cont;
+    background-color: #E5D4C8; /* Cor clara */
+    padding: 1rem;
+    color: #36434A; /* Cor do texto no conteúdo */
+    font-weight: 400;
+}
+
+/* Layout para telas maiores (414px ou mais) */
+@media (min-width: 414px) {
+    body {
+        grid-template-areas: 
+            "head head"
+            "side cont";
+        grid-template-columns: 1fr 3fr; /* Lado esquerdo menor, conteúdo maior */
+        grid-template-rows: auto 1fr; /* Cabeçalho automático, restante flexível */
+    }
+}
+.btns{
+    background-color: #FF4777;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+}
+.btns:active{
+    transition: 0.5s;
+    border-radius: 10px;
+    color: #36434A;
+}
+.btns:not(:active){
+    transition: 0.5s;
+    border-radius: 20px;
+    color: #E5D4C8;
+}
+#buttons{
+    border-radius: 10px;
+    height: 60px;
+    width: 200px ;
+    background-color: #E5D4C8;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
