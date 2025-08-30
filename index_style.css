@@ -51,6 +51,92 @@ body {
     font-weight: 400;
 }
 
+/* Estilo para as seções */
+.section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a seção de boas-vindas */
+#welcome {
+    background-color: #FF4777; /* Cor de destaque */
+    color: #E5D4C8; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilo para a seção do menu */
+#menu {
+    background-color: #E5D4C8; /* Cor clara */
+    color: #36434A; /* Cor do texto */
+}
+
+/* Estilo para a seção sobre nós */
+#about {
+    background-color: #36434A; /* Cor escura */
+    color: #E5D4C8; /* Cor do texto */
+}
+
+/* Estilo para a seção de contato */
+#contact {
+    background-color: #FF4777; /* Cor de destaque */
+    color: #E5D4C8; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilo para o link do cardápio */
+#cardapio {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #FF4777;
+    color: #E5D4C8;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cardapio:hover {
+    background-color: #E5D4C8;
+    color: #36434A;
+}
+
+/* Estilo para a seção de pedido */
+#pedido-section {
+    background-color: #FF4777; /* Cor de destaque */
+    color: #E5D4C8; /* Cor do texto */
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Estilo para o botão de pedido */
+.pedido {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-pedido {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #E5D4C8; /* Cor clara */
+    color: #36434A; /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: 0.3s; /* Suaviza as mudanças */
+}
+
+.btn-pedido:hover {
+    background-color: #36434A; /* Cor ao passar o mouse */
+    color: #E5D4C8; /* Cor do texto ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
+
 /* Layout para telas maiores (414px ou mais) */
 @media (min-width: 414px) {
     body {
