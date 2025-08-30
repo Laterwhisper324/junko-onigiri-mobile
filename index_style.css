@@ -61,18 +61,26 @@ body {
         grid-template-rows: auto 1fr; /* Cabeçalho automático, restante flexível */
     }
 }
-.btns{
+.btns {
     background-color: #FF4777;
     height: 50px;
     width: 50px;
     border-radius: 20px;
     border: none;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    transition: 0.5s; /* Suaviza as mudanças */
+    color: #E5D4C8; /* Cor padrão */
+    font-size: 20px; /* Tamanho do ícone */
+    text-decoration: none; /* Remove o sublinhado */
 }
-.btns:active{
+
+.btns:hover {
     transition: 0.5s;
     border-radius: 10px;
-    color: #36434A;
 }
+
 .btns:not(:active){
     transition: 0.5s;
     border-radius: 20px;
