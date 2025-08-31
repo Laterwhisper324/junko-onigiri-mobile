@@ -1,0 +1,50 @@
+/* Estilo para o conteúdo */
+#cont {
+    grid-area: cont;
+    background-color: #E5D4C8; /* Cor clara */
+    padding: 1rem;
+    color: #36434A; /* Cor do texto */
+    font-weight: 400;
+}
+
+/* Estilo para as seções */
+.section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Estilo para a seção de informações de contato */
+#contact-info {
+    background-color: #FF4777; /* Cor de destaque */
+    color: #E5D4C8; /* Cor do texto */
+    text-align: center;
+}
+
+/* Estilo para a seção de redes sociais */
+#social-media {
+    background-color: #36434A; /* Cor escura */
+    color: #E5D4C8; /* Cor do texto */
+    text-align: center;
+}
+
+#social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+#social-media li {
+    margin: 0.5rem 0;
+}
+
+#social-media a {
+    color: #E5D4C8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#social-media a:hover {
+    color: #FF4777; /* Cor ao passar o mouse */
+}

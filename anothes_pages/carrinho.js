@@ -41,6 +41,13 @@ document.getElementById('enviar-whatsapp').addEventListener('click', () => {
     const quantidadeHotSalmao = parseInt(document.getElementById('sabor-hot-salmao').value) || 0;
     const quantidadeKani = parseInt(document.getElementById('sabor-kani').value) || 0;
 
+    // Cálculo do total
+    const total = 
+        (quantidadeSalmao * precos.salmao) +
+        (quantidadeAtum * precos.atum) +
+        (quantidadeHotSalmao * precos.hotSalmao) +
+        (quantidadeKani * precos.kani);
+
     // Monta a lista de pedidos
     let listaPedidos = '';
     if (quantidadeSalmao > 0) listaPedidos += `- ${quantidadeSalmao}x Onigiri de Salmão\n`;
@@ -52,10 +59,10 @@ document.getElementById('enviar-whatsapp').addEventListener('click', () => {
     const nomeCliente = prompt("Digite seu nome:");
 
     // Número do WhatsApp
-    const numeroWhatsApp = "993360711";
+    const numeroWhatsApp = "84295482";
 
     // Mensagem formatada
-    const mensagem = `Olá, meu nome é ${nomeCliente}. Eu vim pelo site e estou fazendo um pedido de:\n${listaPedidos}`;
+    const mensagem = `Olá, meu nome é ${nomeCliente}. Eu vim pelo site e estou fazendo um pedido de:\n${listaPedidos}\nTotal: R$ ${total.toFixed(2)}`;
 
     // Codifica a mensagem para URL
     const mensagemCodificada = encodeURIComponent(mensagem);
