@@ -59,7 +59,7 @@ document.getElementById('enviar-whatsapp').addEventListener('click', () => {
     const nomeCliente = prompt("Digite seu nome:");
 
     // Número do WhatsApp
-    const numeroWhatsApp = "84295482";
+    const numeroWhatsApp = "918429-5482";
 
     // Mensagem formatada
     const mensagem = `Olá, meu nome é ${nomeCliente}. Eu vim pelo site e estou fazendo um pedido de:\n${listaPedidos}\nTotal: R$ ${total.toFixed(2)}`;
