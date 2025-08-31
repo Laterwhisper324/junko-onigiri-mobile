@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Junko-Onigiri</title>
+    <link rel="stylesheet" href="../index_style.css">
+    <link rel="stylesheet" href="carrinho_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div id="head"><h2>Carrinho</h2></div>
+    <div id="side">
+        <div id="buttons">
+            <a href="../index.html" class="btns"><i class="fas fa-home"></i></a>
+            <a href="carrinho.html" class="btns"><i class="fas fa-shopping-cart"></i></a>
+            <a href="contato.html" class="btns"><i class="fas fa-comment"></i></a>
+        </div>
+    </div>
+    <div id="cont">
+        <div class="section" id="cart">
+            <h2>Seu Carrinho</h2>
+            <p>Escolha os sabores e a quantidade de onigiris:</p>
+            <form id="onigiri-form">
+                <div class="onigiri-item">
+                    <label for="sabor-salmao">Salmão (R$ 12,00):</label>
+                    <input class="input-pedido" type="number" id="sabor-salmao" name="sabor-salmao" min="0" value="0">
+                </div>
+                <div class="onigiri-item">
+                    <label for="sabor-atum">Atum (R$ 8,00):</label>
+                    <input class="input-pedido" type="number" id="sabor-atum" name="sabor-atum" min="0" value="0">
+                </div>
+                <div class="onigiri-item">
+                    <label for="sabor-hot-salmao">Hot Salmão (R$ 15,00):</label>
+                    <input class="input-pedido" type="number" id="sabor-hot-salmao" name="sabor-hot-salmao" min="0" value="0">
+                </div>
+                <div class="onigiri-item">
+                    <label for="sabor-kani">Kani (R$ 8,00):</label>
+                    <input class="input-pedido" type="number" id="sabor-kani" name="sabor-kani" min="0" value="0">
+                </div>
+                <div class="pedido">
+                    <button type="button" class="btn-pedido" id="calcular-total">Calcular Total</button>
+                </div>
+                <h3 id="total-preco">Total: R$ 0,00</h3>
+            </form>
+        </div>
+    </div>
+    <script src="carrinho.js"></script>
+</body>
+</html>
