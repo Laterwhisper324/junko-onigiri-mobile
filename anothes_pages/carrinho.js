@@ -55,14 +55,21 @@ document.getElementById('enviar-whatsapp').addEventListener('click', () => {
     if (quantidadeHotSalmao > 0) listaPedidos += `- ${quantidadeHotSalmao}x Onigiri Hot Salmão\n`;
     if (quantidadeKani > 0) listaPedidos += `- ${quantidadeKani}x Onigiri de Kani\n`;
 
-    // Nome do cliente (pode ser capturado de um input adicional)
+    // Nome e endereço do cliente
     const nomeCliente = prompt("Digite seu nome:");
+    const enderecoCliente = prompt("Digite seu endereço:");
+
+    // Verifica se o nome e endereço foram preenchidos
+    if (!nomeCliente || !enderecoCliente) {
+        alert("Por favor, insira seu nome e endereço antes de enviar o pedido.");
+        return;
+    }
 
     // Número do WhatsApp
-    const numeroWhatsApp = "918429-5482";
+    const numeroWhatsApp = "9184295482";
 
     // Mensagem formatada
-    const mensagem = `Olá, meu nome é ${nomeCliente}. Eu vim pelo site e estou fazendo um pedido de:\n${listaPedidos}\nTotal: R$ ${total.toFixed(2)}`;
+    const mensagem = `Olá, meu nome é ${nomeCliente}. Eu vim pelo site e estou fazendo um pedido de:\n${listaPedidos}\nTotal: R$ ${total.toFixed(2)}\nEndereço: ${enderecoCliente}`;
 
     // Codifica a mensagem para URL
     const mensagemCodificada = encodeURIComponent(mensagem);
